@@ -3,10 +3,10 @@ const config = require('./index');
 
 module.exports = {
   development: {
-    storage: config.dbFile,
-    dialect: "sqlite",
-    seederStorage: "sequelize",
-    seederStorageTableName: "SequelizeMeta",
+    storage: './db/dev.db',
+    dialect: 'sqlite',
+    seederStorage: 'sequelize',
+    seederStorageTableName: 'SequelizeMeta',
     logQueryParameters: true,
     typeValidation: true
   },
